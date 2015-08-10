@@ -1,23 +1,25 @@
 {
   "name": "class-map",
-  "version": "1.0.0",
-  "description": "classMap is a visual tool for planning  a four-year curriculum",
-  "main": "index.js",
-  "scripts": {
-    "test": "npm test"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/classMap/class-map.git"
-  },
-  "keywords": [
-    "class",
-    "planner"
+  "version": "0.0.0",
+  "homepage": "https://github.com/classMap/class-map",
+  "authors": [
+    "Anshu Siripurapu",
+    "Alven Wang",
+    "Chris Wilson"
   ],
-  "author": "Anshu Siripurapu, Alven Wang, Chris Wilson",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/classMap/class-map/issues"
-  },
-  "homepage": "https://github.com/classMap/class-map#readme"
+  "description": "class-map is a visual tool for planning a four-year degree",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.3"
+  }
 }
