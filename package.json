@@ -1,0 +1,18 @@
+{
+  "name": "class-map",
+  "version": "1.0.0",
+  "description": "classMap is a tool for visually planning your curriculum for a four-year degree.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/classMap/class-map.git"
+  },
+  "author": "Anshu Siripurapu, Chris Wilson, Alven Wang",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/classMap/class-map/issues"
+  }
+}
