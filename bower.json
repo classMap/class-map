@@ -1,0 +1,25 @@
+{
+  "name": "class-map",
+  "version": "0.0.0",
+  "homepage": "https://github.com/classMap/class-map",
+  "authors": [
+    "Anshu Siripurapu",
+    "Alven Wang",
+    "Chris Wilson"
+  ],
+  "description": "class-map is a visual tool for planning a four-year degree",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.3"
+  }
+}

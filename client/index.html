@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="drag-and-drop">
+
+<head>
+  <meta charset="UTF-8">
+  <title>classMap</title>
+</head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script>
+<script src="../bower_components/angular-dragdrop/src/angular-dragdrop.min.js"></script>
+<script src="../app/app.js"></script>
+<script src="../bower_components/angular/angular.js"></script>
+
+<body>
+  <div ng-controller="OverviewCtrl" class="btn btn-primary" data-drag="true" data-jqyoui-options="{revert: 'invalid'}" ng-model="list1" jqyoui-draggable="{animate:true}" ng-hide="!list1.title">{{list1.title}}</div>
+  <div ng-controller = "OverviewCtrl" class="thumbnail ng-pristine ng-valid ui-droppable" data-drop="true" data-jqyoui-options="" ng-model="list2" jqyoui-droppable="{multiple:true}" style="height:50px; border:1px black solid;" aria-disabled="false">
+          <div class="btn btn-success ng-pristine ng-valid ng-binding ui-draggable ui-draggable-disabled ui-state-disabled" data-drag="true" data-jqyoui-options="" ng-model="list2" jqyoui-draggable="" ng-hide="!list2.title" aria-disabled="true" style="position: relative; display: none;"></div>
+        </div>
+</body>
+
+</html>
