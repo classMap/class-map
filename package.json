@@ -14,5 +14,11 @@
   "license": "BSD-2-Clause",
   "bugs": {
     "url": "https://github.com/classMap/class-map/issues"
+  },
+  "dependencies": {
+    "express": "~4.13.3",
+    "pg": "~4.4.1",
+    "sequelize": "~3.5.1",
+    "pg-hstore": "~2.3.2"
   }
 }
