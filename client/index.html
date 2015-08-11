@@ -4,22 +4,21 @@
 <head>
   <meta charset="UTF-8">
   <title>classMap</title>
-  <link rel="stylesheet" type = "text/css" href="./styles.css">
 </head>
+<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+<script src="../bower_components/jquery-ui/jquery-ui.min.js"></script>
 <script src="../bower_components/angular/angular.js"></script>
-<script src="../bower_components/jquery/dist/jquery.js"></script>
-<script src="../bower_components/jquery-ui/jquery-ui.js"></script>
-<script src="../bower_components/dndLists/angular-drag-and-drop-lists.js"></script>
+<script src="../bower_components/angular-dragdrop/src/angular-dragdrop.min.js"></script>
 <script src="../app/app.js"></script>
-<script src="../app/controllers/ClassController.js"></script>
-<body >
-  <div ng-controller = "ClassController as classCtrl">
-    <div ng-repeat = "list in classCtrl.year">
-      <div ng-click ="classCtrl.select($index)" class = "class">
-        {{list}}
-      </div>
-    </div>
-  </div>
-</body>
 
+
+  <body>
+    <span data-drag="true" data-drop = "true" data-jqyoui-options = "{revert: 'invalid'}" jqyoui-draggable="{animate: true}">So you think you can drag</span>
+    <br/>
+    <br/>
+    <div class="thumbnail" data-drop="true" data-drag = "false" data-jqyoui-options ng-model="list2" jqyoui-droppable  style='height:50px; width: 500px; border: 1px black solid;'></div>
+    <div class="thumbnail" data-drop="true" data-drag = "false" data-jqyoui-options ng-model="list2" jqyoui-droppable   style='height:50px; width: 500px; border: 1px black solid;'></div>
+    <div class="thumbnail" data-drop="true" data-drag = "false" data-jqyoui-options ng-model="list2" jqyoui-droppable   style='height:50px; width: 500px; border: 1px black solid;'></div>
+
+  </body>
 </html>
