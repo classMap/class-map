@@ -4,31 +4,21 @@
 <head>
   <meta charset="UTF-8">
   <title>classMap</title>
-  <link rel="stylesheet" type = "text/css" href="./styles.css">
 </head>
+<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+<script src="../bower_components/jquery-ui/jquery-ui.min.js"></script>
 <script src="../bower_components/angular/angular.js"></script>
 <script src="../bower_components/angular-dragdrop/src/angular-dragdrop.min.js"></script>
-<script src="../bower_components/dndLists/angular-drag-and-drop-lists.js"></script>
 <script src="../app/app.js"></script>
 
-<body>
-  <div ng-controller = "SimpleDemoController">
-  <ul dnd-list="list">
-      <!-- The dnd-draggable directive makes an element draggable and will
-           transfer the object that was assigned to it. If an element was
-           dragged away, you have to remove it from the original list
-           yourself using the dnd-moved attribute -->
-      <li ng-repeat="item in list"
-          dnd-draggable="item"
-          dnd-moved="list.splice($index, 1)"
-          dnd-effect-allowed="move"
-          dnd-selected="models.selected = item"
-          ng-class="{'selected': models.selected === item}"
-          >
-          {{item.label}}
-      </li>
-  </ul>
-</div>
-</body>
 
+  <body>
+    <span data-drag="true" data-drop = "true" data-jqyoui-options = "{revert: 'invalid'}" jqyoui-draggable="{animate: true}">So you think you can drag</span>
+    <br/>
+    <br/>
+    <div class="thumbnail" data-drop="true" data-drag = "false" data-jqyoui-options ng-model="list2" jqyoui-droppable  style='height:50px; width: 500px; border: 1px black solid;'></div>
+    <div class="thumbnail" data-drop="true" data-drag = "false" data-jqyoui-options ng-model="list2" jqyoui-droppable   style='height:50px; width: 500px; border: 1px black solid;'></div>
+    <div class="thumbnail" data-drop="true" data-drag = "false" data-jqyoui-options ng-model="list2" jqyoui-droppable   style='height:50px; width: 500px; border: 1px black solid;'></div>
+
+  </body>
 </html>

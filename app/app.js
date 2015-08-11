@@ -1,23 +1,33 @@
 
 
-var App = angular.module('drag-and-drop', ['dndLists']);
 
-App.controller("SimpleDemoController", function($scope) {
+var App = angular.module('drag-and-drop', ['ngDragDrop']);
 
-    $scope.models = {
-        selected: null,
-        lists: {"A": [], "B": []}
-    };
+App.controller('oneCtrl', function($scope, $timeout) {
+  $scope.list1 = [];
+  $scope.list2 = [];
+  $scope.list3 = [];
+  $scope.list4 = [];
 
-    // Generate initial model
-    for (var i = 1; i <= 3; ++i) {
-        $scope.models.lists.A.push({label: "Item A" + i});
-        $scope.models.lists.B.push({label: "Item B" + i});
+  $scope.list5 = [
+    { 'title': 'Item 1', 'drag': true },
+    { 'title': 'Item 2', 'drag': true },
+    { 'title': 'Item 3', 'drag': true },
+    { 'title': 'Item 4', 'drag': true },
+    { 'title': 'Item 5', 'drag': true },
+    { 'title': 'Item 6', 'drag': true },
+    { 'title': 'Item 7', 'drag': true },
+    { 'title': 'Item 8', 'drag': true }
+  ];
+
+  // Limit items to be dropped in list1
+  $scope.optionsList1 = {
+    accept: function(dragEl) {
+      if ($scope.list1.length >= 2) {
+        return false;
+      } else {
+        return true;
+      }
     }
-
-    // Model to JSON for demo purpose
-    $scope.$watch('models', function(model) {
-        $scope.modelAsJson = angular.toJson(model, true);
-    }, true);
-
+  };
 });
