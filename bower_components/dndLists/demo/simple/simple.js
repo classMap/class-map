@@ -1,8 +1,4 @@
-
-
-var App = angular.module('drag-and-drop', ['dndLists']);
-
-App.controller("SimpleDemoController", function($scope) {
+angular.module("demo").controller("SimpleDemoController", function($scope) {
 
     $scope.models = {
         selected: null,
