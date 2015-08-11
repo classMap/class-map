@@ -7,3 +7,5 @@ sequelize = new Sequelize('courses', 'alven', '1234', {
   host: 'localhost',
   port: 5432
 })
+
+var Course = sequelize.define('course')
