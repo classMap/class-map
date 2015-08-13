@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>classMap</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <script src="../bower_components/jquery/dist/jquery.min.js"></script>
 <script src="../bower_components/jquery-ui/jquery-ui.min.js"></script>
@@ -13,12 +14,58 @@
 
 
   <body>
-    <span data-drag="true" data-drop = "true" data-jqyoui-options = "{revert: 'invalid'}" jqyoui-draggable="{animate: true}">So you think you can drag</span>
-    <br/>
-    <br/>
-    <div class="thumbnail" data-drop="true" data-drag = "false" data-jqyoui-options ng-model="list2" jqyoui-droppable  style='height:50px; width: 500px; border: 1px black solid;'></div>
-    <div class="thumbnail" data-drop="true" data-drag = "false" data-jqyoui-options ng-model="list2" jqyoui-droppable   style='height:50px; width: 500px; border: 1px black solid;'></div>
-    <div class="thumbnail" data-drop="true" data-drag = "false" data-jqyoui-options ng-model="list2" jqyoui-droppable   style='height:50px; width: 500px; border: 1px black solid;'></div>
-
+    <h1> classMap </h1>
+    <div class = "course" data-drag="true" data-drop = "true" data-jqyoui-options = "{revert: 'invalid'}" jqyoui-draggable="{animate: true}">BUAD 310</div>
+    <div class = "course" data-drag="true" data-drop = "true" data-jqyoui-options = "{revert: 'invalid'}" jqyoui-draggable="{animate: true}">POSC 425</div>
+    <div id = "header">
+      <div class = "yearTitle"> Freshman </div>
+      <div class = "yearTitle"> Sophomore </div>
+      <div class = "yearTitle"> Junior </div>
+      <div class = "yearTitle"> Senior </div>
+    </div> 
+    <div id = "grid">
+    <div class="gridItem" data-drop="false" data-drag = "false" data-jqyoui-options ng-model="list2" jqyoui-droppable >Fall</div>
+    <div class="gridItem" data-drop="false" data-drag = "false" data-jqyoui-options ng-model="list2" jqyoui-droppable>Spring</div>
+    <div class="gridItem" data-drop="false" data-drag = "false" data-jqyoui-options ng-model="list2" jqyoui-droppable>Fall</div>
+    <div class="gridItem" data-drop="false" data-drag = "false" data-jqyoui-options ng-model="list2" jqyoui-droppable>Spring</div>
+    <div class="gridItem" data-drop="false" data-drag = "false" data-jqyoui-options ng-model="list2" jqyoui-droppable>Fall</div>
+    <div class="gridItem" data-drop="false" data-drag = "false" data-jqyoui-options ng-model="list2" jqyoui-droppable>Spring</div>
+    <div class="gridItem" data-drop="false" data-drag = "false" data-jqyoui-options ng-model="list2" jqyoui-droppable>Fall</div>
+    <div class="gridItem" data-drop="false" data-drag = "false" data-jqyoui-options ng-model="list2" jqyoui-droppable>Spring</div>
+    <div class="gridItem" data-drop="true" data-drag = "false" data-jqyoui-options ng-model="list2" jqyoui-droppable></div>
+    <div class="gridItem" data-drop="true" data-drag = "false" data-jqyoui-options ng-model="list2" jqyoui-droppable></div>
+    <div class="gridItem" data-drop="true" data-drag = "false" data-jqyoui-options ng-model="list2" jqyoui-droppable></div>
+    <div class="gridItem" data-drop="true" data-drag = "false" data-jqyoui-options ng-model="list2" jqyoui-droppable></div>
+    <div class="gridItem" data-drop="true" data-drag = "false" data-jqyoui-options ng-model="list2" jqyoui-droppable></div>
+    <div class="gridItem" data-drop="true" data-drag = "false" data-jqyoui-options ng-model="list2" jqyoui-droppable></div>
+    <div class="gridItem" data-drop="true" data-drag = "false" data-jqyoui-options ng-model="list2" jqyoui-droppable></div>
+    <div class="gridItem" data-drop="true" data-drag = "false" data-jqyoui-options ng-model="list2" jqyoui-droppable></div>
+    <div class="gridItem" data-drop="true" data-drag = "false" data-jqyoui-options ng-model="list2" jqyoui-droppable></div>
+    <div class="gridItem" data-drop="true" data-drag = "false" data-jqyoui-options ng-model="list2" jqyoui-droppable></div>
+    <div class="gridItem" data-drop="true" data-drag = "false" data-jqyoui-options ng-model="list2" jqyoui-droppable></div>
+    <div class="gridItem" data-drop="true" data-drag = "false" data-jqyoui-options ng-model="list2" jqyoui-droppable></div>
+    <div class="gridItem" data-drop="true" data-drag = "false" data-jqyoui-options ng-model="list2" jqyoui-droppable></div>
+    <div class="gridItem" data-drop="true" data-drag = "false" data-jqyoui-options ng-model="list2" jqyoui-droppable></div>
+    <div class="gridItem" data-drop="true" data-drag = "false" data-jqyoui-options ng-model="list2" jqyoui-droppable></div>
+    <div class="gridItem" data-drop="true" data-drag = "false" data-jqyoui-options ng-model="list2" jqyoui-droppable></div>
+    <div class="gridItem" data-drop="true" data-drag = "false" data-jqyoui-options ng-model="list2" jqyoui-droppable></div>
+    <div class="gridItem" data-drop="true" data-drag = "false" data-jqyoui-options ng-model="list2" jqyoui-droppable></div>
+    <div class="gridItem" data-drop="true" data-drag = "false" data-jqyoui-options ng-model="list2" jqyoui-droppable></div>
+    <div class="gridItem" data-drop="true" data-drag = "false" data-jqyoui-options ng-model="list2" jqyoui-droppable></div>
+    <div class="gridItem" data-drop="true" data-drag = "false" data-jqyoui-options ng-model="list2" jqyoui-droppable></div>
+    <div class="gridItem" data-drop="true" data-drag = "false" data-jqyoui-options ng-model="list2" jqyoui-droppable></div>
+    <div class="gridItem" data-drop="true" data-drag = "false" data-jqyoui-options ng-model="list2" jqyoui-droppable></div>
+    <div class="gridItem" data-drop="true" data-drag = "false" data-jqyoui-options ng-model="list2" jqyoui-droppable></div>
+    <div class="gridItem" data-drop="true" data-drag = "false" data-jqyoui-options ng-model="list2" jqyoui-droppable></div>
+    <div class="gridItem" data-drop="true" data-drag = "false" data-jqyoui-options ng-model="list2" jqyoui-droppable></div>
+    <div class="gridItem" data-drop="true" data-drag = "false" data-jqyoui-options ng-model="list2" jqyoui-droppable></div>
+    <div class="gridItem" data-drop="true" data-drag = "false" data-jqyoui-options ng-model="list2" jqyoui-droppable></div>
+    <div class="gridItem" data-drop="true" data-drag = "false" data-jqyoui-options ng-model="list2" jqyoui-droppable></div>
+    <div class="gridItem" data-drop="true" data-drag = "false" data-jqyoui-options ng-model="list2" jqyoui-droppable></div>
+    <div class="gridItem" data-drop="true" data-drag = "false" data-jqyoui-options ng-model="list2" jqyoui-droppable></div>
+    <div class="gridItem" data-drop="true" data-drag = "false" data-jqyoui-options ng-model="list2" jqyoui-droppable></div>
+  </div>
+  <div id = 'form'></div>
+    <p> Built with care by Anshu Siripurapu, Alven Wang, and Chris Wilson in Los Angeles, California. </p>
   </body>
 </html>

@@ -1,10 +1,10 @@
 {
   "name": "class-map",
-<<<<<<< HEAD
   "version": "1.0.0",
-  "description": "classMap is a tool for visually planning your curriculum for a four-year degree.",
+  "description": "class-map is a visual tool for planning a four-year degree",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon server/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -12,7 +12,7 @@
     "url": "https://github.com/classMap/class-map.git"
   },
   "author": "Anshu Siripurapu, Chris Wilson, Alven Wang",
-  "license": "BSD-2-Clause",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/classMap/class-map/issues"
   },
@@ -20,29 +20,18 @@
     "express": "~4.13.3",
     "pg": "~4.4.1",
     "sequelize": "~3.5.1",
-    "pg-hstore": "~2.3.2"
-=======
-  "version": "0.0.0",
-  "homepage": "https://github.com/classMap/class-map",
-  "authors": [
-    "Anshu Siripurapu",
-    "Alven Wang",
-    "Chris Wilson"
-  ],
-  "description": "class-map is a visual tool for planning a four-year degree",
+    "pg-hstore": "~2.3.2",
+    "angular": "~1.4.3",
+    "nodemon": "~1.4.0"
+  },
   "moduleType": [
     "node"
   ],
-  "license": "MIT",
   "ignore": [
     "**/.*",
     "node_modules",
     "bower_components",
     "test",
     "tests"
-  ],
-  "dependencies": {
-    "angular": "~1.4.3"
->>>>>>> 977dd2c1eb5d6069345b7a7f0b36d37105835bb1
-  }
+  ]
 }

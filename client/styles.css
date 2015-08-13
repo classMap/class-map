@@ -1,4 +1,51 @@
-.class:hover {
-    cursor: pointer;
-    cursor: hand;
+
+body{
+  background-color: #FFCC00;
 }
+.gridItem {
+  background-color: #990000;
+  float: left;
+  height:75px;
+  width: 75px;
+  border: 1px black solid;
+  text-align: center;
+  vertical-align: middle;
+  padding-left: 1px;
+}
+
+#grid {
+  background-color: black;
+  padding: 5px;
+  width: 630px;
+  height: 400px;
+}
+.course {
+  height: 50px;
+  width: 50px;
+  border: 1px black solid;
+  text-align: center;
+  float: right;
+}
+
+#form {
+  height: 400px;
+  width: 300px;
+  border: 1px black solid;
+  position: fixed;
+  top: 80px;
+  left: 700px;
+}
+
+#header {
+  border: 1px black solid;
+  width: 628px;
+  height: 20px;
+  padding: 5px;
+}
+
+.yearTitle {
+  float: left;
+  width: 100px;
+  padding-left: 55px;
+}
+
