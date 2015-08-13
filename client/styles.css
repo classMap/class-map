@@ -19,11 +19,15 @@ body{
   height: 400px;
 }
 .course {
-  height: 50px;
-  width: 50px;
-  border: 1px black solid;
+  height: 75px;
+  width: 75px;
+  border: 1px white solid;
+  border-radius: 20px;
   text-align: center;
-  float: right;
+  line-height: 75px;
+  color: white;
+  background-color: black;
+  float: left;
 }
 
 #form {
@@ -32,6 +36,14 @@ body{
   border: 1px black solid;
   position: fixed;
   top: 80px;
+  left: 700px;
+}
+
+#dropzone {
+  height: 150px;
+  width: 400px;
+  position: fixed;
+  top: 500px;
   left: 700px;
 }
 
