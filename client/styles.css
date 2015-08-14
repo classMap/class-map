@@ -64,11 +64,10 @@ body{
 }
 
 #trash {
-  height: 100px;
-  width: 100px;
+  height: 155px;
+  width: 107px;
   position: fixed;
-  top: 550px;
+  top: 540px;
   left: 550px;
   background: url("./assets/trashcan.png") no-repeat;
-  background-size: cover;
 }

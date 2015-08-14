@@ -32,7 +32,7 @@ App.controller('formController', function($scope) {
     $('<div class = "course" data-drag="true" data-drop = "true"  jqyoui-draggable="{animate: true}">GE-G</div>').draggable({revert: 'invalid', snap: '.gridItem', snapTolerance: 50}).appendTo("#dropzone");
     $('<div class = "course" data-drag="true" data-drop = "true"  jqyoui-draggable="{animate: true}">GE-H</div>').draggable({revert: 'invalid', snap: '.gridItem', snapTolerance: 50}).appendTo("#dropzone");
     $('<p class = "geinfo"> Further information about the General Education program can be found at <a href= "http://dornsife.usc.edu/2015ge/2015ge-requirements/"> www.dornsife.usc.edu/2015ge/2015ge-requirements/ </a></p>').appendTo("#form");
-    $('<p class = "geinfo"> NOTE: All freshmen must enroll in a General Education Seminar (GSEM) in their first year which satisfies one GE requirement. Here, it is representing GE-A.</p>').appendTo("#form");
+    $('<p class = "geinfo"> NOTE: All freshmen must enroll in a General Education Seminar (GSEM) in their first year which satisfies one GE requirement. Here, it is satisfying the GE-A requirement.</p>').appendTo("#form");
 
     $scope.message = "Effective Fall 2015, all undergraduates at USC must satisfy the following degree requirements. Drag the classes below to your schedule. Drag things to the trash can to delete them."
   } else if ($scope.genEd = 'honors'){
