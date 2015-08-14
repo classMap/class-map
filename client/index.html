@@ -15,14 +15,12 @@
 
   <body>
     <h1> classMap </h1>
-    <div class = "course" data-drag="true" data-drop = "true" data-jqyoui-options = "{revert: 'invalid'}" jqyoui-draggable="{animate: true}">BUAD 310</div>
-    <div class = "course" data-drag="true" data-drop = "true" data-jqyoui-options = "{revert: 'invalid'}" jqyoui-draggable="{animate: true}">POSC 425</div>
     <div id = "header">
       <div class = "yearTitle"> Freshman </div>
       <div class = "yearTitle"> Sophomore </div>
       <div class = "yearTitle"> Junior </div>
       <div class = "yearTitle"> Senior </div>
-    </div> 
+    </div>
     <div id = "grid">
     <div class="gridItem" data-drop="false" data-drag = "false" data-jqyoui-options ng-model="list2" jqyoui-droppable >Fall</div>
     <div class="gridItem" data-drop="false" data-drag = "false" data-jqyoui-options ng-model="list2" jqyoui-droppable>Spring</div>
@@ -65,7 +63,28 @@
     <div class="gridItem" data-drop="true" data-drag = "false" data-jqyoui-options ng-model="list2" jqyoui-droppable></div>
     <div class="gridItem" data-drop="true" data-drag = "false" data-jqyoui-options ng-model="list2" jqyoui-droppable></div>
   </div>
-  <div id = 'form'></div>
+  <div id = 'form' ng-controller = "formController as formCtrl" >
+    {{message}}
+    <br/>
+    <br/>
+    <form ng-submit = 'addMajor()' ng-hide = "showForm">
+    <select name="majors" ng-model = 'major'> 
+  <option value="Political_Economy">Political Economy</option>
+  <option value="Economics">Economics</option>
+  <option value="Psychology">Psychology</option>
+  <option value="English">English</option>
+  </select>
+  <select name="GE" ng-model = 'genEd'>
+<option value="honors">Thematic Option Honors Program</option>
+<option value="regular">University General Education Program</option>
+</select>
+      <input type = 'submit' value = 'Fight On!'>
+    </form>
+    <form ng-submit = 'addReqs()' ng-hide = "showReqs" style= "bottom: 0">
+      <input type = 'submit' value = 'Continue'>
+    </form>
+  </div>
+  <div id = dropzone> </div>
     <p> Built with care by Anshu Siripurapu, Alven Wang, and Chris Wilson in Los Angeles, California. </p>
   </body>
 </html>
