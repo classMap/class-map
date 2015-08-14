@@ -35,6 +35,7 @@ body{
   height: 400px;
   width: 300px;
   border: 1px black solid;
+  border-radius: 10px;
   position: fixed;
   top: 80px;
   left: 700px;
@@ -46,6 +47,8 @@ body{
   position: fixed;
   top: 500px;
   left: 700px;
+  border: 1px black dashed;
+
 }
 
 #header {
@@ -59,5 +62,14 @@ body{
   float: left;
   width: 100px;
   padding-left: 55px;
+}
+
+#trash {
+  height: 155px;
+  width: 107px;
+  position: fixed;
+  top: 540px;
+  left: 550px;
+  background: url("./assets/trashcan.png") no-repeat;
 }
 
