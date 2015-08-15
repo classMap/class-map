@@ -8,7 +8,15 @@ if (!global.hasOwnProperty('db')) {
       protocol: 'postgres',
       port: 5000,
       logging:  true //false
-    })
+    });
+    var Course = sequelize.define('course', {
+      id: Sequelize.INTEGER,
+      major: Sequelize.STRING,
+      group: Sequelize.INTEGER,
+      name: Sequelize.STRING,
+      }, 
+      {timestamps: false}
+    );
   } else {
     // the application is executed on the local machine ... use mysql
     sequelize = new Sequelize('example-app-db', 'root', null)

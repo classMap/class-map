@@ -41,11 +41,13 @@ var pg = require('pg');
 
 // all environments
 app.set('port', process.env.PORT || 3000);
-app.set('views', __dirname + '/views');
-app.set('view engine', 'jade');
+// app.set('views', __dirname + '/views');
+// app.set('view engine', 'jade');
 app.use('/', express.static("client"));
 
-
+app.get('/car', function(req, res) {
+  Course.findAll().done(function(stuff) { res.json(stuff)});
+})
 
 db.sequelize.sync().then(function() {
   http.createServer(app).listen(app.get('port'), function(){

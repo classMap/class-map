@@ -1,7 +1,14 @@
-
 body{
-  background-color: #FFC72C;
+
+  background-color: #ffc72c;
+  font-family: sans-serif;
 }
+
+.course:hover {
+  cursor: pointer;
+  cursor: hand;
+}
+
 .gridItem {
   background-color: #990000;
   float: left;
@@ -12,6 +19,7 @@ body{
   vertical-align: middle;
   padding-left: 1px;
 }
+
 .gridTitle {
   background-color: #990000;
   float: left;
@@ -22,11 +30,6 @@ body{
   vertical-align: middle;
   padding-left: 1px;
   line-height: 50px;
-}
-
-.course:hover {
-  cursor: pointer;
-  cursor: hand;
 }
 
 #grid {
