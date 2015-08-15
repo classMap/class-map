@@ -1,7 +1,13 @@
-
 body{
-  background-color: #FFCC00;
+  background-color: #ffc72c;
+  font-family: sans-serif;
 }
+
+.course:hover {
+  cursor: pointer;
+  cursor: hand;
+}
+
 .gridItem {
   background-color: #990000;
   float: left;
@@ -12,6 +18,7 @@ body{
   vertical-align: middle;
   padding-left: 1px;
 }
+
 .gridTitle {
   background-color: #990000;
   float: left;
@@ -22,11 +29,6 @@ body{
   vertical-align: middle;
   padding-left: 1px;
   line-height: 50px;
-}
-
-.course:hover {
-  cursor: pointer;
-  cursor: hand;
 }
 
 #grid {
@@ -88,3 +90,4 @@ body{
   left: 550px;
   background: url("./assets/trashcan.png") no-repeat;
 }
+
