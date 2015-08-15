@@ -1,7 +1,6 @@
 body{
-
-  background-color: #ffc72c;
   font-family: sans-serif;
+  background-color: #dcdcdc;
 }
 
 .course:hover {
@@ -10,51 +9,60 @@ body{
 }
 
 .gridItem {
-  background-color: #990000;
   float: left;
   height:75px;
   width: 75px;
-  border: 1px black solid;
+  border: 1px white solid;
   text-align: center;
   vertical-align: middle;
   padding-left: 1px;
 }
 
 .gridTitle {
-  background-color: #990000;
   float: left;
   height:50px;
   width: 75px;
-  border: 1px black solid;
+  border: 1px white solid;
   text-align: center;
   vertical-align: middle;
   padding-left: 1px;
   line-height: 50px;
+  color: white;
 }
 
 #grid {
-  background-color: black;
+  background-color: grey;
   padding: 5px;
   width: 630px;
   height: 400px;
+  position: absolute;
 }
 .course {
+  background-color: #990000;
   height: 75px;
   width: 75px;
   border: 1px white solid;
   border-radius: 20px;
   text-align: center;
-  color: white;
-  background-color: black;
+  color: #FFCC00;
   float: left;
 }
-
+.ge {
+  background-color: #FFCC00;
+  height: 75px;
+  width: 75px;
+  border: 1px white solid;
+  border-radius: 20px;
+  text-align: center;
+  color: #990000;
+  float: left;
+}
 #form {
   height: 400px;
   width: 300px;
   border: 1px black solid;
   border-radius: 10px;
-  position: fixed;
+  position: absolute;
   top: 80px;
   left: 700px;
 }
@@ -62,7 +70,7 @@ body{
 #dropzone {
   height: 150px;
   width: 400px;
-  position: fixed;
+  position: absolute;
   top: 500px;
   left: 700px;
 
@@ -84,8 +92,15 @@ body{
 #trash {
   height: 155px;
   width: 107px;
-  position: fixed;
+  position: absolute;
   top: 540px;
   left: 550px;
   background: url("./assets/trashcan.png") no-repeat;
+}
+
+#message {
+  top: 600px;
+  left: 5px;
+  position: absolute;
+  width: 400px;
 }

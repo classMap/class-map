@@ -30,7 +30,7 @@
     <div class="gridTitle" data-drop="false" data-drag = "false" data-jqyoui-options jqyoui-droppable>Fall</div>
     <div class="gridTitle" data-drop="false" data-drag = "false" data-jqyoui-options  jqyoui-droppable>Spring</div>
     <div class="gridItem" id = "0" data-drop="true" data-drag = "false" data-jqyoui-options  jqyoui-droppable="{multiple:true}"></div>
-    <div class="gridItem" id = "1" iddata-drop="true" data-drag = "false" data-jqyoui-options  jqyoui-droppable="{multiple:true}"></div>
+    <div class="gridItem" id = "1" data-drop="true" data-drag = "false" data-jqyoui-options  jqyoui-droppable="{multiple:true}"></div>
     <div class="gridItem" id = "2" data-drop="true" data-drag = "false" data-jqyoui-options  jqyoui-droppable="{multiple:true}"></div>
     <div class="gridItem" id = "3" data-drop="true" data-drag = "false" data-jqyoui-options  jqyoui-droppable="{multiple:true}"></div>
     <div class="gridItem" id = "4" data-drop="true" data-drag = "false" data-jqyoui-options  jqyoui-droppable="{multiple:true}"></div>
@@ -79,12 +79,22 @@
 </select>
       <input type = 'submit' value = 'Fight On!'>
     </form>
-    <form ng-submit = 'addReqs()' ng-hide = "showReqs" style= "bottom: 0">
+    <form ng-submit = 'addReqs()' ng-hide = "showReqs">
+      <input type = 'submit' value = 'Continue'>
+    </form>
+    <form ng-submit = 'addElecs()' ng-hide = "showElec">
+      <input type = 'text' ng-model= 'elec1' placeholder="Elective">
+      <input type = 'text' ng-model= 'elec2' placeholder="Elective">
+      <input type = 'text' ng-model= 'elec3' placeholder="Elective">
+      <input type = 'text' ng-model= 'elec4' placeholder="Elective">
+      <input type = 'text' ng-model= 'elec5' placeholder="Elective">
       <input type = 'submit' value = 'Continue'>
     </form>
   </div>
   <div id = "dropzone" data-drop = "true" jqyoui-droppable> </div>
   <div id = "trash"></div>
-
+  <div id = "message">
+    <p> Built with care by Anshu Siripurapu, Alven Wang, and Chris Wilson in Los Angeles, California. </p>
+  </div>
   </body>
 </html>
