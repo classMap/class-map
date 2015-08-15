@@ -61,7 +61,7 @@ App.controller('formController', function($scope, $http) {
   }
   $scope.addReqs = function(){
     $(".geinfo").remove();
-    $scope.message = "Nice! With your remaining credits, let's add some free classes or a minor!."
+    $scope.message = "Nice! With your remaining credits, let's add some free classes or a minor!"
     $scope.showReqs = true;
     $scope.showElec = false;
 
@@ -73,23 +73,23 @@ App.controller('formController', function($scope, $http) {
     var elec4 = $scope.elec4;
     var elec5 = $scope.elec5;
     if (elec1){
-      $('<div class = "course" data-drag="true" data-drop = "true"  jqyoui-draggable="{animate: true}"></div>').append(elec1).draggable({revert: 'invalid', snap: '.gridItem', snapTolerance: 50}).appendTo("#form");
+      $('<div class = "elective" data-drag="true" data-drop = "true"  jqyoui-draggable="{animate: true}"></div>').append(elec1).draggable({revert: 'invalid', snap: '.gridItem', snapTolerance: 50}).appendTo("#form");
       $scope.elec1 = "";
     }
     if (elec2){
-      $('<div class = "course" data-drag="true" data-drop = "true"  jqyoui-draggable="{animate: true}"></div>').append(elec2).draggable({revert: 'invalid', snap: '.gridItem', snapTolerance: 50}).appendTo("#form");
+      $('<div class = "elective" data-drag="true" data-drop = "true"  jqyoui-draggable="{animate: true}"></div>').append(elec2).draggable({revert: 'invalid', snap: '.gridItem', snapTolerance: 50}).appendTo("#form");
       $scope.elec2 = "";
     }
     if (elec3){
-      $('<div class = "course" data-drag="true" data-drop = "true"  jqyoui-draggable="{animate: true}"></div>').append(elec3).draggable({revert: 'invalid', snap: '.gridItem', snapTolerance: 50}).appendTo("#form");
+      $('<div class = "elective" data-drag="true" data-drop = "true"  jqyoui-draggable="{animate: true}"></div>').append(elec3).draggable({revert: 'invalid', snap: '.gridItem', snapTolerance: 50}).appendTo("#form");
       $scope.elec3 = "";
     }
     if (elec4){
-      $('<div class = "course" data-drag="true" data-drop = "true"  jqyoui-draggable="{animate: true}"></div>').append(elec4).draggable({revert: 'invalid', snap: '.gridItem', snapTolerance: 50}).appendTo("#form");
+      $('<div class = "elective" data-drag="true" data-drop = "true"  jqyoui-draggable="{animate: true}"></div>').append(elec4).draggable({revert: 'invalid', snap: '.gridItem', snapTolerance: 50}).appendTo("#form");
       $scope.elec4 = "";
     }
     if (elec5){
-      $('<div class = "course" data-drag="true" data-drop = "true"  jqyoui-draggable="{animate: true}"></div>').append(elec5).draggable({revert: 'invalid', snap: '.gridItem', snapTolerance: 50}).appendTo("#form");
+      $('<div class = "elective" data-drag="true" data-drop = "true"  jqyoui-draggable="{animate: true}"></div>').append(elec5).draggable({revert: 'invalid', snap: '.gridItem', snapTolerance: 50}).appendTo("#form");
       $scope.elec5 = "";
     }
   }

@@ -57,6 +57,16 @@ body{
   color: #990000;
   float: left;
 }
+.elective {
+  background-color: black;
+  height: 75px;
+  width: 75px;
+  border: 1px white solid;
+  border-radius: 20px;
+  text-align: center;
+  color: #FFCC00;
+  float: left;
+}
 #form {
   height: 400px;
   width: 300px;
