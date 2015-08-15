@@ -17,6 +17,9 @@ App.controller('formController', function($scope) {
               $(ui.draggable).remove();
           }
       });
+    //make get request to server
+    //server returns object matching $scope.major
+    //iterate over array and create divs and append to grid 
     if ($scope.genEd === "regular"){
     $('<div class = "course" data-drag="true" data-drop = "true"  jqyoui-draggable="{animate: true}">GSEM</div>').draggable({revert: 'invalid', snap: '.gridItem', snapTolerance: 50}).appendTo("#firstItem");
     $('<div class = "course" data-drag="true" data-drop = "true"  jqyoui-draggable="{animate: true}">GE-B</div>').draggable({revert: 'invalid', snap: '.gridItem', snapTolerance: 50}).appendTo("#dropzone");
