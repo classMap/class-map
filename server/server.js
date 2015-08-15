@@ -1,35 +1,3 @@
-// var http = require('http');
-// var express = require('express');
-// var app = express();
-// var Sequelize = require('sequelize');
-// sequelize = new Sequelize("process.env.HEROKU_POSTGRESQL_URL")
-
-// var Course = sequelize.define('economics', {
-//   id: Sequelize.INTEGER,
-//   dept: Sequelize.STRING,
-//   num: Sequelize.INTEGER,
-//   name: Sequelize.STRING,
-//   req: Sequelize.BOOLEAN
-//   },
-//   {timestamps: false}
-// );
-
-// app.use('/', express.static("client"));
-
-// app.get('/classes', function (req, res, next) {
-//   Course.findAll({
-//     where: {
-//       id: 01
-//     }
-//   }).then(function (economics) {
-//     res.send(economics)
-//   });
-// });
-
-
-
-// app.listen(3000);
-
 var express = require('express');
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
@@ -66,6 +34,7 @@ app.post('/majors', function(req, res){
   })
 });
 
-app.listen(3000);
+
+app.listen(process.env.PORT || 5000)
 
 module.exports = app;

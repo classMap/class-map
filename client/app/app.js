@@ -62,7 +62,7 @@ App.controller('formController', function($scope, $http) {
   }
   $scope.addReqs = function(){
     $(".geinfo").remove();
-    $scope.message = "Nice! Now let's add your major classes."
+    $scope.message = "Nice! With your remaining credits, let's add some free classes or a minor!."
     $scope.showReqs = true;
 
   }
