@@ -24,6 +24,11 @@ body{
   line-height: 50px;
 }
 
+.course:hover {
+  cursor: pointer;
+  cursor: hand;
+}
+
 #grid {
   background-color: black;
   padding: 5px;
