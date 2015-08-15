@@ -30,27 +30,23 @@
 
 // app.listen(3000);
 
-var express = require('express')
-  , http    = require('http')
-  , path    = require('path')
-  , db      = require('./models');
-
+var express = require('express');
+var mongoose = require('mongoose');
 var app = express();
+var bodyParser = require('body-parser');
+var cookieParser = require('cookie-parser');
 
-var pg = require('pg');
+mongoose.connect('mongodb://alven:4nshuman@ds033143.mongolab.com:33143/classmap', function(err) {
+    if(err){ return err; }
+    console.log('connected to DB');
+});
 
-// all environments
-app.set('port', process.env.PORT || 3000);
-// app.set('views', __dirname + '/views');
-// app.set('view engine', 'jade');
+app.use(bodyParser.json());
+app.use(cookieParser());
 app.use('/', express.static("client"));
 
-app.get('/car', function(req, res) {
-  Course.findAll().done(function(stuff) { res.json(stuff)});
-})
 
-db.sequelize.sync().then(function() {
-  http.createServer(app).listen(app.get('port'), function(){
-    console.log('Express server listening on port ' + app.get('port'));
-  });
-});
+app.listen(3000);
+
+module.exports = app;
+
