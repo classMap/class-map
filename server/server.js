@@ -37,7 +37,7 @@ var app = express();
 var bodyParser = require('body-parser');
 var cookieParser = require('cookie-parser');
 
-mongoose.connect('mongodb://alven:4nshuman@ds033143.mongolab.com:33143/classmap', function(err) {
+mongoose.connect('mongodb://alven:4nshuman@ds033143.mongolab.com:33143/classmap:5000', function(err) {
     if(err){ return err; }
     console.log('connected to DB');
 });
@@ -66,6 +66,6 @@ app.post('/majors', function(req, res){
   })
 });
 
-app.listen(3000);
+app.listen(5000);
 
 module.exports = app;
