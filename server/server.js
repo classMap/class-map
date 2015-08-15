@@ -23,6 +23,7 @@ app.use(bodyParser.json());
 app.use(cookieParser());
 app.use('/', express.static("client"));
 
+//receives request from client and returns data for user's major
 app.post('/majors', function(req, res){
   console.log("Fetching majors...");
   major.findOne({
