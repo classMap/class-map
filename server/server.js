@@ -10,7 +10,7 @@
 //   num: Sequelize.INTEGER,
 //   name: Sequelize.STRING,
 //   req: Sequelize.BOOLEAN
-//   }, 
+//   },
 //   {timestamps: false}
 // );
 
@@ -30,27 +30,42 @@
 
 // app.listen(3000);
 
-var express = require('express')
-  , http    = require('http')
-  , path    = require('path')
-  , db      = require('./models');
-
+var express = require('express');
+var mongoose = require('mongoose');
+var Schema = mongoose.Schema;
 var app = express();
+var bodyParser = require('body-parser');
+var cookieParser = require('cookie-parser');
 
-var pg = require('pg');
+mongoose.connect('mongodb://alven:4nshuman@ds033143.mongolab.com:33143/classmap', function(err) {
+    if(err){ return err; }
+    console.log('connected to DB');
+});
 
-// all environments
-app.set('port', process.env.PORT || 3000);
-// app.set('views', __dirname + '/views');
-// app.set('view engine', 'jade');
+var majorSchema = new Schema ({
+  major: {type: String, required: true, index: {unique: true}},
+  classes: {type: [String], required: true}
+});
+
+var major = mongoose.model('major', majorSchema, 'courses');
+
+app.use(bodyParser.json());
+app.use(cookieParser());
 app.use('/', express.static("client"));
 
-app.get('/car', function(req, res) {
-  Course.findAll().done(function(stuff) { res.json(stuff)});
-})
-
-db.sequelize.sync().then(function() {
-  http.createServer(app).listen(app.get('port'), function(){
-    console.log('Express server listening on port ' + app.get('port'));
-  });
+app.post('/majors', function(req, res){
+  console.log("Fetching majors...");
+  major.findOne({
+    major: req.body.major
+  }, function(err, data) {
+    if (err) {
+      return console.log(err);
+    }
+  res.send(data);
+  res.end();
+  })
 });
+
+app.listen(3000);
+
+module.exports = app;
