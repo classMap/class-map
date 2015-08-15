@@ -4,7 +4,7 @@ classMap is a tool for visually planning your curriculum for a four-year degree.
 #license
 The MIT License (MIT)
 
-Copyright (c) <2015> <Anshu Siripurapu, Alven Wang, and Chris Wilson>
+Copyright (c) <2015 by Anshu Siripurapu, Alven Wang, and Chris Wilson>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
