@@ -20,7 +20,6 @@ App.controller('formController', function($scope, $http) {
       });
     var major = {major: $scope.major};
     $http.post('/majors', major).then(function(data){
-      console.log(data.data.classes);
       var classes = data.data.classes;
       for (var i=0; i<classes.length; i++){
         var text = classes[i];
@@ -62,7 +61,7 @@ App.controller('formController', function($scope, $http) {
   }
   $scope.addReqs = function(){
     $(".geinfo").remove();
-    $scope.message = "Nice! Now let's add your major classes."
+    $scope.message = "Nice! With your remaining credits, let's add some free classes or a minor!."
     $scope.showReqs = true;
 
   }
