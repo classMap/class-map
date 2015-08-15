@@ -7,6 +7,14 @@ body{
   cursor: pointer;
   cursor: hand;
 }
+.ge:hover {
+  cursor: pointer;
+  cursor: hand;
+}
+.elective:hover {
+  cursor: pointer;
+  cursor: hand;
+}
 
 .gridItem {
   float: left;
