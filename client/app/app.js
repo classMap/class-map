@@ -1,11 +1,12 @@
-var App = angular.module('main', ['ngDragDrop']);
+var App = angular.module('main', ['ngDragDrop'])
 
-App.controller('formController', function($scope) {
+App.controller('formController', function($scope, $http) {
   $scope.major = ""
   $scope.genEd = ""
   $scope.message = "Congratulations on your admission to USC! \n Let's plan out your curriculum over the next four years. \n Begin by selecting a major and a general education program."
   $scope.showForm = false;
   $scope.showReqs = true;
+  $scope.classes = [];
   $scope.addMajor = function(){
     if (!$scope.major || !$scope.genEd){
       alert("Sorry, you need to select a major and a GE program");
@@ -17,8 +18,19 @@ App.controller('formController', function($scope) {
               $(ui.draggable).remove();
           }
       });
+    var major = {major: $scope.major};
+    $http.post('/majors', major).then(function(data){
+      console.log(data.data.classes);
+      var classes = data.data.classes;
+      for (var i=0; i<classes.length; i++){
+        var text = classes[i];
+        $('<div class = "course" data-drag="true" data-drop = "true"  jqyoui-draggable="{animate: true}"></div>').append(text).draggable({revert: 'invalid', snap: '.gridItem', snapTolerance: 50}).appendTo("#"+(i+1));
+      }
+    });
+
+
     if ($scope.genEd === "regular"){
-    $('<div class = "course" data-drag="true" data-drop = "true"  jqyoui-draggable="{animate: true}">GSEM</div>').draggable({revert: 'invalid', snap: '.gridItem', snapTolerance: 50}).appendTo("#firstItem");
+    $('<div class = "course" data-drag="true" data-drop = "true"  jqyoui-draggable="{animate: true}">GSEM</div>').draggable({revert: 'invalid', snap: '.gridItem', snapTolerance: 50}).appendTo("#0");
     $('<div class = "course" data-drag="true" data-drop = "true"  jqyoui-draggable="{animate: true}">GE-B</div>').draggable({revert: 'invalid', snap: '.gridItem', snapTolerance: 50}).appendTo("#dropzone");
     $('<div class = "course" data-drag="true" data-drop = "true"  jqyoui-draggable="{animate: true}">GE-B</div>').draggable({revert: 'invalid', snap: '.gridItem', snapTolerance: 50}).appendTo("#dropzone");
     $('<div class = "course" data-drag="true" data-drop = "true"  jqyoui-draggable="{animate: true}">GE-C</div>').draggable({revert: 'invalid', snap: '.gridItem', snapTolerance: 50}).appendTo("#dropzone");
