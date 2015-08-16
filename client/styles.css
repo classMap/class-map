@@ -7,6 +7,14 @@ body{
   cursor: pointer;
   cursor: hand;
 }
+.ge:hover {
+  cursor: pointer;
+  cursor: hand;
+}
+.elective:hover {
+  cursor: pointer;
+  cursor: hand;
+}
 
 .gridItem {
   float: left;
@@ -42,7 +50,7 @@ body{
   height: 75px;
   width: 75px;
   border: 1px white solid;
-  border-radius: 20px;
+  border-radius: 10px;
   text-align: center;
   color: #FFCC00;
   float: left;
@@ -52,17 +60,18 @@ body{
   height: 75px;
   width: 75px;
   border: 1px white solid;
-  border-radius: 20px;
+  border-radius: 10px;
   text-align: center;
   color: #990000;
   float: left;
+  line-height: 75px;
 }
 .elective {
   background-color: black;
   height: 75px;
   width: 75px;
   border: 1px white solid;
-  border-radius: 20px;
+  border-radius: 10px;
   text-align: center;
   color: #FFCC00;
   float: left;
@@ -79,7 +88,7 @@ body{
 
 #dropzone {
   height: 150px;
-  width: 400px;
+  width: 450px;
   position: absolute;
   top: 500px;
   left: 700px;
