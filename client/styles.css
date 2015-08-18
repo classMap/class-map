@@ -1,6 +1,8 @@
 body{
-  font-family: sans-serif;
-  background-color: #dcdcdc;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  background: url("./assets/background.jpg") no-repeat;
+  background-size: cover;
+  background-position: 30% 20%;
 }
 
 .course:hover {
@@ -24,6 +26,7 @@ body{
   text-align: center;
   vertical-align: middle;
   padding-left: 1px;
+  background-color: #a0a0a0;
 }
 
 .gridTitle {
@@ -39,13 +42,16 @@ body{
 }
 
 #grid {
-  background-color: grey;
+  background-color: #505050;
   padding: 5px;
   width: 630px;
   height: 400px;
+  top: 115px;
   position: absolute;
+  border-radius: 10px;
 }
 .course {
+  font-family: sans-serif;
   background-color: #990000;
   height: 75px;
   width: 75px;
@@ -56,6 +62,7 @@ body{
   float: left;
 }
 .ge {
+  font-family: sans-serif;
   background-color: #FFCC00;
   height: 75px;
   width: 75px;
@@ -67,6 +74,7 @@ body{
   line-height: 75px;
 }
 .elective {
+  font-family: sans-serif;
   background-color: black;
   height: 75px;
   width: 75px;
@@ -84,11 +92,14 @@ body{
   position: absolute;
   top: 80px;
   left: 700px;
+  background-color: white;
+  opacity: 0.85;
+  padding: 5px;
 }
 
 #dropzone {
   height: 150px;
-  width: 450px;
+  width: 500px;
   position: absolute;
   top: 500px;
   left: 700px;
@@ -99,7 +110,11 @@ body{
   border: 1px black solid;
   width: 628px;
   height: 20px;
+  top: 80px;
   padding: 5px;
+  position: absolute;
+  background-color: white;
+  opacity: 0.85;
 }
 
 .yearTitle {
@@ -122,4 +137,55 @@ body{
   left: 5px;
   position: absolute;
   width: 400px;
+  background-color: white;
+  opacity: .85;
+  border-radius: 10px;
+  padding: 5px;
+}
+/*http://bavotasan.com/2011/style-select-box-using-only-css/*/
+.styled-select select {
+   background: transparent;
+   width: 268px;
+   padding: 5px;
+   font-size: 14px;
+   line-height: 1;
+   border: 0;
+   border-radius: 0;
+   height: 38px;
+   -webkit-appearance: none;
+   text-overflow: ellipsis;
+   }
+
+.styled-select {
+   width: 300px;
+   height: 38px;
+   overflow: hidden;
+   background: url("./assets/dropdown.png") no-repeat right #ddd;
+   border: 1px solid #ccc;
+
+   }
+/*http://www.graemeboy.com/css-buttons*/
+.styled-button {
+	-webkit-box-shadow:rgba(0,0,0,0.2) 0 1px 0 0;
+	-moz-box-shadow:rgba(0,0,0,0.2) 0 1px 0 0;
+	box-shadow:rgba(0,0,0,0.2) 0 1px 0 0;
+	color:#333;
+	background-color:#FA2;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border:none;
+	font-family:'Helvetica Neue',Arial,sans-serif;
+	font-size:16px;
+	font-weight:700;
+	height:32px;
+	padding:4px 16px;
+	text-shadow:#FE6 0 1px 0
+}
+
+input {
+  font-size: 24px;
+  padding: 10px;
+ border: solid 1px #dcdcdc;
+ transition: box-shadow 0.3s, border 0.3s;
 }

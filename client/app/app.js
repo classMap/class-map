@@ -48,16 +48,15 @@ App.controller('formController', function($scope, $http) {
     //creates honors program courses
   } else if ($scope.genEd = 'honors'){
     $('<div class = "ge" data-drag="true" data-drop = "true"  jqyoui-draggable="{animate: true}">Core 101</div>').draggable({revert: 'invalid', snap: '.gridItem', snapTolerance: 50}).appendTo("#dropzone");
-    $('<div class = "ge" data-drag="true" data-drop = "true"  jqyoui-draggable="{animate: true}">Core 102</div>').draggable({revert: 'invalid', snap: '.gridItem', snapTolerance: 50}).appendTo("#dropzone");
+    $('<div class = "ge" data-drag="true" data-drop = "true"  jqyoui-draggable="{animate: true}">Core 102</div>').draggable({revert: 'invalid', snap: '.gridItem', snapTolerance: 50}).appendTo("#0");
     $('<div class = "ge" data-drag="true" data-drop = "true"  jqyoui-draggable="{animate: true}">Core 103</div>').draggable({revert: 'invalid', snap: '.gridItem', snapTolerance: 50}).appendTo("#dropzone");
     $('<div class = "ge" data-drag="true" data-drop = "true"  jqyoui-draggable="{animate: true}">Core 104</div>').draggable({revert: 'invalid', snap: '.gridItem', snapTolerance: 50}).appendTo("#dropzone");
-    $('<div class = "ge" data-drag="true" data-drop = "true"  jqyoui-draggable="{animate: true}">Core 111</div>').draggable({revert: 'invalid', snap: '.gridItem', snapTolerance: 50}).appendTo("#dropzone");
+    $('<div class = "ge" data-drag="true" data-drop = "true"  jqyoui-draggable="{animate: true}">Core 111</div>').draggable({revert: 'invalid', snap: '.gridItem', snapTolerance: 50}).appendTo("#24");
     $('<div class = "ge" data-drag="true" data-drop = "true"  jqyoui-draggable="{animate: true}">Core 112</div>').draggable({revert: 'invalid', snap: '.gridItem', snapTolerance: 50}).appendTo("#dropzone");
     $('<div class = "ge" data-drag="true" data-drop = "true"  jqyoui-draggable="{animate: true}">GE-A</div>').draggable({revert: 'invalid', snap: '.gridItem', snapTolerance: 50}).appendTo("#dropzone");
     $('<div class = "ge" data-drag="true" data-drop = "true"  jqyoui-draggable="{animate: true}">GE-C</div>').draggable({revert: 'invalid', snap: '.gridItem', snapTolerance: 50}).appendTo("#dropzone");
     $('<div class = "ge" data-drag="true" data-drop = "true"  jqyoui-draggable="{animate: true}">GE-F</div>').draggable({revert: 'invalid', snap: '.gridItem', snapTolerance: 50}).appendTo("#dropzone");
     $('<div class = "ge" data-drag="true" data-drop = "true"  jqyoui-draggable="{animate: true}">GE-E</div>').draggable({revert: 'invalid', snap: '.gridItem', snapTolerance: 50}).appendTo("#dropzone");
-    $('<div class = "ge" data-drag="true" data-drop = "true"  jqyoui-draggable="{animate: true}">Diversity</div>').draggable({revert: 'invalid', snap: '.gridItem', snapTolerance: 50}).appendTo("#dropzone");
     $('<p class = "geinfo"> Further information about the Thematic Option program can be found at <a href= "http://dornsife.usc.edu/thematic-option/"> www.dornsife.usc.edu/thematic-option/ </a></p>').appendTo("#form");
     $('<p class = "geinfo"> NOTE: GE-A, GE-C, GE-E, and GE-F can be satisfied with Advanced Placement or IB credit.</p>').appendTo("#form");
     $scope.message = "Effective Fall 2015, all Thematic Option students must satisfy the following degree requirements. Drag the classes below to your schedule. Drag things to the trash can to delete them."
@@ -72,6 +71,7 @@ App.controller('formController', function($scope, $http) {
     $scope.showElec = false;
 
   }
+  //adds elective classes the user inputs
   $scope.addElecs = function(){
     var elec1 = $scope.elec1;
     var elec2 = $scope.elec2;
@@ -79,23 +79,23 @@ App.controller('formController', function($scope, $http) {
     var elec4 = $scope.elec4;
     var elec5 = $scope.elec5;
     if (elec1){
-      $('<div class = "elective" data-drag="true" data-drop = "true"  jqyoui-draggable="{animate: true}"></div>').append(elec1).draggable({revert: 'invalid', snap: '.gridItem', snapTolerance: 50}).appendTo("#form");
+      $('<div class = "elective" data-drag="true" data-drop = "true"  jqyoui-draggable="{animate: true}"></div>').append(elec1).draggable({revert: 'invalid', snap: '.gridItem', snapTolerance: 50}).appendTo("#dropzone");
       $scope.elec1 = "";
     }
     if (elec2){
-      $('<div class = "elective" data-drag="true" data-drop = "true"  jqyoui-draggable="{animate: true}"></div>').append(elec2).draggable({revert: 'invalid', snap: '.gridItem', snapTolerance: 50}).appendTo("#form");
+      $('<div class = "elective" data-drag="true" data-drop = "true"  jqyoui-draggable="{animate: true}"></div>').append(elec2).draggable({revert: 'invalid', snap: '.gridItem', snapTolerance: 50}).appendTo("#dropzone");
       $scope.elec2 = "";
     }
     if (elec3){
-      $('<div class = "elective" data-drag="true" data-drop = "true"  jqyoui-draggable="{animate: true}"></div>').append(elec3).draggable({revert: 'invalid', snap: '.gridItem', snapTolerance: 50}).appendTo("#form");
+      $('<div class = "elective" data-drag="true" data-drop = "true"  jqyoui-draggable="{animate: true}"></div>').append(elec3).draggable({revert: 'invalid', snap: '.gridItem', snapTolerance: 50}).appendTo("#dropzone");
       $scope.elec3 = "";
     }
     if (elec4){
-      $('<div class = "elective" data-drag="true" data-drop = "true"  jqyoui-draggable="{animate: true}"></div>').append(elec4).draggable({revert: 'invalid', snap: '.gridItem', snapTolerance: 50}).appendTo("#form");
+      $('<div class = "elective" data-drag="true" data-drop = "true"  jqyoui-draggable="{animate: true}"></div>').append(elec4).draggable({revert: 'invalid', snap: '.gridItem', snapTolerance: 50}).appendTo("#dropzone");
       $scope.elec4 = "";
     }
     if (elec5){
-      $('<div class = "elective" data-drag="true" data-drop = "true"  jqyoui-draggable="{animate: true}"></div>').append(elec5).draggable({revert: 'invalid', snap: '.gridItem', snapTolerance: 50}).appendTo("#form");
+      $('<div class = "elective" data-drag="true" data-drop = "true"  jqyoui-draggable="{animate: true}"></div>').append(elec5).draggable({revert: 'invalid', snap: '.gridItem', snapTolerance: 50}).appendTo("#dropzone");
       $scope.elec5 = "";
     }
   }
