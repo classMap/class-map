@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <title>Class Map</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
+  <link href='http://fonts.googleapis.com/css?family=Josefin+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 </head>
 <script src="../bower_components/jquery/dist/jquery.min.js"></script>
 <script src="../bower_components/jquery-ui/jquery-ui.min.js"></script>
@@ -64,7 +65,7 @@
   </div>
   <div id = 'form' ng-controller = "formController as formCtrl" >
   </br>
-    {{message}}
+    <div id = "greeting">{{message}}</div>
     <br/>
     <br/>
     <form ng-submit = 'addMajor()' ng-hide = "showForm">
@@ -109,5 +110,7 @@
   <div id = "message">
     <p> Built with care by Anshu Siripurapu, Alven Wang, and Chris Wilson in Los Angeles, California. </p>
   </div>
+
   </body>
+
 </html>

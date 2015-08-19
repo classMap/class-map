@@ -1,5 +1,6 @@
 body{
-  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-family: "Josefin Sans" sans-serif;
+  font-size: 18px;
   background: url("./assets/background.jpg") no-repeat;
   background-size: cover;
   background-position: 30% 20%;
@@ -123,13 +124,9 @@ body{
   padding-left: 55px;
 }
 
-#trash {
-  height: 155px;
-  width: 107px;
-  position: absolute;
-  top: 540px;
-  left: 550px;
-  background: url("./assets/trashcan.png") no-repeat;
+
+#greeting {
+white-space: pre-wrap;
 }
 
 #message {
