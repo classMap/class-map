@@ -3,7 +3,7 @@ var App = angular.module('main', ['ngDragDrop'])
 App.controller('formController', function($scope, $http) {
   $scope.major = ""
   $scope.genEd = ""
-  $scope.message = "Congratulations on your admission to the USC Dornsife College of Letters, Arts and Sciences!" + "\n" + "\n" + "Let's plan out your curriculum over the next four years." + "\n" + "\n" + "Begin by selecting a major and a general education program."
+  $scope.message = "Congratulations on your admission to the USC Dornsife College of Letters, Arts and Sciences!" + "\n" + "\n" + "Let's plan out your curriculum over the next four years using this interactive grid." + "\n" + "\n" + "Begin by selecting a major and a general education program."
   $scope.showForm = false;
   $scope.showReqs = true;
   $scope.showElec = true;
@@ -18,7 +18,7 @@ App.controller('formController', function($scope, $http) {
       'width' : '107px',
       'position': 'absolute',
       'top' : '540px',
-      'left' : '550px',
+      'left' : '500px',
       'background' : 'url("./assets/trash-can.png") no-repeat',
       'background-size' : 'cover'
     });
