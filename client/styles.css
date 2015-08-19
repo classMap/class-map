@@ -47,7 +47,7 @@ body{
   padding: 5px;
   width: 625px;
   height: 390px;
-  top: 115px;
+  top: 18%;
   position: absolute;
   border-radius: 10px;
 }
@@ -91,18 +91,18 @@ body{
   border: 1px black solid;
   border-radius: 10px;
   position: absolute;
-  top: 80px;
-  left: 700px;
+  top: 12%;
+  right: 5%;
   background-color: white;
   opacity: 0.85;
-  padding: 5px;
+  padding: 10px;
 }
 
 #dropzone {
   height: 150px;
   width: 500px;
   position: absolute;
-  top: 500px;
+  top: 470px;
   left: 700px;
 
 }
@@ -111,7 +111,7 @@ body{
   border: 1px black solid;
   width: 620px;
   height: 20px;
-  top: 80px;
+  top: 12%;
   padding: 5px;
   position: absolute;
   background-color: white;
@@ -130,10 +130,22 @@ white-space: pre-wrap;
 }
 
 #message {
-  top: 600px;
+  bottom: 0px;
   left: 5px;
   position: absolute;
   width: 30%;
+  background-color: white;
+  opacity: .85;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+#github {
+  bottom: 0px;
+  right: 5px;
+  position: absolute;
+  height: 30px;
+  width: auto;
   background-color: white;
   opacity: .85;
   border-radius: 10px;
@@ -145,12 +157,11 @@ white-space: pre-wrap;
    width: 100%;
    padding: 5px;
    font-size: 14px;
-   line-height: 1;
+   line-height: 2;
    border: 0;
-   border-radius: 0;
+   border-radius: 5px;
    height: 38px;
    -webkit-appearance: none;
-   text-overflow: ellipsis;
    }
 
 .styled-select {
@@ -159,6 +170,7 @@ white-space: pre-wrap;
    overflow: hidden;
    background: url("./assets/dropdown.png") no-repeat right #ddd;
    border: 1px solid #ccc;
+   border-radius: 5px;
 
    }
 /*http://www.graemeboy.com/css-buttons*/
