@@ -4,6 +4,7 @@ body{
   background: url("./assets/background.jpg") no-repeat;
   background-size: cover;
   background-position: 30% 20%;
+
 }
 
 .course:hover {
@@ -47,11 +48,12 @@ body{
   padding: 5px;
   width: 625px;
   height: 390px;
-  top: 18%;
+  top: 16%;
   position: absolute;
   border-radius: 10px;
 }
 .course {
+  font-size: 16px;
   font-family: sans-serif;
   background-color: #990000;
   height: 75px;
@@ -63,6 +65,7 @@ body{
   float: left;
 }
 .ge {
+  font-size: 16px;
   font-family: sans-serif;
   background-color: #FFCC00;
   height: 75px;
@@ -75,6 +78,7 @@ body{
   line-height: 75px;
 }
 .elective {
+  font-size: 16px;
   font-family: sans-serif;
   background-color: black;
   height: 75px;
@@ -91,7 +95,7 @@ body{
   border: 1px black solid;
   border-radius: 10px;
   position: absolute;
-  top: 12%;
+  top: 10%;
   right: 5%;
   background-color: white;
   opacity: 0.85;
@@ -111,7 +115,7 @@ body{
   border: 1px black solid;
   width: 620px;
   height: 20px;
-  top: 12%;
+  top: 10%;
   padding: 5px;
   position: absolute;
   background-color: white;
@@ -147,9 +151,14 @@ white-space: pre-wrap;
   height: 30px;
   width: auto;
   background-color: white;
-  opacity: .85;
+  opacity: 0;
   border-radius: 10px;
   padding: 5px;
+  transition: all 200ms ease-in-out;
+}
+#github:hover {
+  opacity: 0.85;
+  transition: all 200ms ease-in-out;
 }
 /*http://bavotasan.com/2011/style-select-box-using-only-css/*/
 .styled-select select {
@@ -184,18 +193,22 @@ white-space: pre-wrap;
 	-moz-border-radius:5px;
 	-webkit-border-radius:5px;
 	border:none;
-	font-family:'Helvetica Neue',Arial,sans-serif;
+	font-family:'Helvetica Neu',sans-serif;
 	font-size:16px;
-	font-weight:700;
+	font-weight:500;
 	height:32px;
 	padding:4px 16px;
 	text-shadow:#FE6 0 1px 0;
 
 }
-
+.styled-button:hover{
+  background-color: #990000;
+  color: #FFCC00;
+}
 input {
   font-size: 24px;
   padding: 10px;
  border: solid 1px #dcdcdc;
  transition: box-shadow 0.3s, border 0.3s;
+ width: 90%;
 }
