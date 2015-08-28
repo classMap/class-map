@@ -1,6 +1,10 @@
 body{
-  font-family: sans-serif;
-  background-color: #dcdcdc;
+  font-family: "Josefin Sans" sans-serif;
+  font-size: 18px;
+  background: url("./assets/background.jpg") no-repeat;
+  background-size: cover;
+  background-position: 30% 20%;
+
 }
 
 .course:hover {
@@ -24,6 +28,7 @@ body{
   text-align: center;
   vertical-align: middle;
   padding-left: 1px;
+  background-color: #a0a0a0;
 }
 
 .gridTitle {
@@ -39,13 +44,17 @@ body{
 }
 
 #grid {
-  background-color: grey;
+  background-color: #505050;
   padding: 5px;
-  width: 630px;
-  height: 400px;
-  position: absolute;
+  width: 625px;
+  height: 390px;
+  top: 16%;
+  position: fixed;
+  border-radius: 10px;
 }
 .course {
+  font-size: 16px;
+  font-family: sans-serif;
   background-color: #990000;
   height: 75px;
   width: 75px;
@@ -56,6 +65,8 @@ body{
   float: left;
 }
 .ge {
+  font-size: 16px;
+  font-family: sans-serif;
   background-color: #FFCC00;
   height: 75px;
   width: 75px;
@@ -67,6 +78,8 @@ body{
   line-height: 75px;
 }
 .elective {
+  font-size: 16px;
+  font-family: sans-serif;
   background-color: black;
   height: 75px;
   width: 75px;
@@ -76,30 +89,48 @@ body{
   color: #FFCC00;
   float: left;
 }
+
 #form {
-  height: 400px;
-  width: 300px;
+  height: auto;
+  width: 40%;
   border: 1px black solid;
   border-radius: 10px;
-  position: absolute;
-  top: 80px;
-  left: 700px;
+  position: fixed;
+  top: 10%;
+  right: 5%;
+  background-color: white;
+  opacity: 0.85;
+  padding: 10px;
 }
 
 #dropzone {
   height: 150px;
-  width: 450px;
+  width: 500px;
   position: absolute;
-  top: 500px;
+  top: 470px;
   left: 700px;
 
 }
 
+#trash {
+    height : 194px;
+    width : 134px;
+    position: fixed;
+    top : 540px;
+    left : 30%;
+    background : url("./assets/trash-can.png") no-repeat;
+    background-size : cover;
+}
+
 #header {
   border: 1px black solid;
-  width: 628px;
+  width: 620px;
   height: 20px;
+  top: 10%;
   padding: 5px;
+  position: absolute;
+  background-color: white;
+  opacity: 0.85;
 }
 
 .yearTitle {
@@ -108,18 +139,111 @@ body{
   padding-left: 55px;
 }
 
-#trash {
-  height: 155px;
-  width: 107px;
-  position: absolute;
-  top: 540px;
-  left: 550px;
-  background: url("./assets/trashcan.png") no-repeat;
+
+#greeting {
+white-space: pre-wrap;
 }
 
 #message {
-  top: 600px;
+  bottom: 0px;
+  left: 5px;
+  position: fixed;
+  width: 30%;
+  background-color: white;
+  opacity: .85;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+#units {
+  bottom: 90px;
+  left: 5px;
+  position: fixed;
+  width: 15%;
+  height: 20px;
+  text-align: center;
+  background-color: white;
+  opacity: .85;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+#majorHeader {
+  top: 0px;
   left: 5px;
   position: absolute;
-  width: 400px;
+  text-align: center;
+  background-color: white;
+  opacity: .85;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+#github {
+  bottom: 0%;
+  right: 5px;
+  position: fixed;
+  height: 30px;
+  width: auto;
+  background-color: white;
+  opacity: 0;
+  border-radius: 10px;
+  padding: 5px;
+  transition: all 200ms ease-in-out;
+}
+#github:hover {
+  opacity: 0.85;
+  transition: all 200ms ease-in-out;
+}
+/*http://bavotasan.com/2011/style-select-box-using-only-css/*/
+.styled-select select {
+   background: transparent;
+   width: 100%;
+   padding: 5px;
+   font-size: 14px;
+   line-height: 2;
+   border: 0;
+   border-radius: 5px;
+   height: 38px;
+   -webkit-appearance: none;
+   }
+
+.styled-select {
+   width: 90%;
+   height: 38px;
+   overflow: hidden;
+   background: url("./assets/dropdown.png") no-repeat right #ddd;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+
+   }
+/*http://www.graemeboy.com/css-buttons*/
+.styled-button {
+	-webkit-box-shadow:rgba(0,0,0,0.2) 0 1px 0 0;
+	-moz-box-shadow:rgba(0,0,0,0.2) 0 1px 0 0;
+	box-shadow:rgba(0,0,0,0.2) 0 1px 0 0;
+	color:#333;
+	background-color:#FA2;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border:none;
+	font-family:'Helvetica Neu',sans-serif;
+	font-size:16px;
+	font-weight:500;
+	height:32px;
+	padding:4px 16px;
+	text-shadow:#FE6 0 1px 0;
+
+}
+.styled-button:hover{
+  background-color: #990000;
+  color: #FFCC00;
+}
+input {
+  font-size: 24px;
+  padding: 10px;
+ border: solid 1px #dcdcdc;
+ transition: box-shadow 0.3s, border 0.3s;
+ width: 90%;
 }

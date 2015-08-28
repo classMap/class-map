@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <title>Class Map</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
+  <link href='http://fonts.googleapis.com/css?family=Josefin+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 </head>
 <script src="../bower_components/jquery/dist/jquery.min.js"></script>
 <script src="../bower_components/jquery-ui/jquery-ui.min.js"></script>
@@ -13,61 +14,64 @@
 <script src="../app/app.js"></script>
 
   <body>
-    <h1>classMap: Map your degree</h1>
+    <!-- <h1>classMap: Map your degree</h1> -->
     <div id = "header">
       <div class = "yearTitle"> Freshman </div>
       <div class = "yearTitle"> Sophomore </div>
       <div class = "yearTitle"> Junior </div>
       <div class = "yearTitle"> Senior </div>
     </div>
-    <div id = "grid">
-    <div class="gridTitle" data-drop="false" data-drag = "false" data-jqyoui-options  jqyoui-droppable >Fall</div>
-    <div class="gridTitle" data-drop="false" data-drag = "false" data-jqyoui-options  jqyoui-droppable>Spring</div>
-    <div class="gridTitle" data-drop="false" data-drag = "false" data-jqyoui-options  jqyoui-droppable>Fall</div>
-    <div class="gridTitle" data-drop="false" data-drag = "false" data-jqyoui-options  jqyoui-droppable>Spring</div>
-    <div class="gridTitle" data-drop="false" data-drag = "false" data-jqyoui-options  jqyoui-droppable>Fall</div>
-    <div class="gridTitle" data-drop="false" data-drag = "false" data-jqyoui-options  jqyoui-droppable>Spring</div>
-    <div class="gridTitle" data-drop="false" data-drag = "false" data-jqyoui-options jqyoui-droppable>Fall</div>
-    <div class="gridTitle" data-drop="false" data-drag = "false" data-jqyoui-options  jqyoui-droppable>Spring</div>
-    <div class="gridItem" id = "0" data-drop="true" data-drag = "false" data-jqyoui-options  jqyoui-droppable="{multiple:true}"></div>
-    <div class="gridItem" id = "1" data-drop="true" data-drag = "false" data-jqyoui-options  jqyoui-droppable="{multiple:true}"></div>
-    <div class="gridItem" id = "2" data-drop="true" data-drag = "false" data-jqyoui-options  jqyoui-droppable="{multiple:true}"></div>
-    <div class="gridItem" id = "3" data-drop="true" data-drag = "false" data-jqyoui-options  jqyoui-droppable="{multiple:true}"></div>
-    <div class="gridItem" id = "4" data-drop="true" data-drag = "false" data-jqyoui-options  jqyoui-droppable="{multiple:true}"></div>
-    <div class="gridItem" id = "5" data-drop="true" data-drag = "false" data-jqyoui-options  jqyoui-droppable="{multiple:true}"></div>
-    <div class="gridItem" id = "6" data-drop="true" data-drag = "false" data-jqyoui-options  jqyoui-droppable="{multiple:true}"></div>
-    <div class="gridItem" id = "7" data-drop="true" data-drag = "false" data-jqyoui-options  jqyoui-droppable="{multiple:false}"></div>
-    <div class="gridItem" id = "8" data-drop="true" data-drag = "false" data-jqyoui-options  jqyoui-droppable="{multiple:false}"></div>
-    <div class="gridItem" id = "9" data-drop="true" data-drag = "false" data-jqyoui-options  jqyoui-droppable="{multiple:false}"></div>
-    <div class="gridItem" id = "10" data-drop="true" data-drag = "false" data-jqyoui-options  jqyoui-droppable="{multiple:false}"></div>
-    <div class="gridItem" id = "11" data-drop="true" data-drag = "false" data-jqyoui-options  jqyoui-droppable="{multiple:false}"></div>
-    <div class="gridItem" id = "12" data-drop="true" data-drag = "false" data-jqyoui-options  jqyoui-droppable="{multiple:false}"></div>
-    <div class="gridItem" id = "13" data-drop="true" data-drag = "false" data-jqyoui-options  jqyoui-droppable="{multiple:false}"></div>
-    <div class="gridItem" id = "14" data-drop="true" data-drag = "false" data-jqyoui-options  jqyoui-droppable="{multiple:false}"></div>
-    <div class="gridItem" id = "15" data-drop="true" data-drag = "false" data-jqyoui-options  jqyoui-droppable="{multiple:false}"></div>
-    <div class="gridItem" id = "16" data-drop="true" data-drag = "false" data-jqyoui-options  jqyoui-droppable="{multiple:false}"></div>
-    <div class="gridItem" id = "17" data-drop="true" data-drag = "false" data-jqyoui-options  jqyoui-droppable="{multiple:false}"></div>
-    <div class="gridItem" id = "18" data-drop="true" data-drag = "false" data-jqyoui-options  jqyoui-droppable="{multiple:false}"></div>
-    <div class="gridItem" id = "19" data-drop="true" data-drag = "false" data-jqyoui-options  jqyoui-droppable="{multiple:false}"></div>
-    <div class="gridItem" id = "20" data-drop="true" data-drag = "false" data-jqyoui-options  jqyoui-droppable="{multiple:false}"></div>
-    <div class="gridItem" id = "21" data-drop="true" data-drag = "false" data-jqyoui-options  jqyoui-droppable="{multiple:false}"></div>
-    <div class="gridItem" id = "22" data-drop="true" data-drag = "false" data-jqyoui-options  jqyoui-droppable="{multiple:false}"></div>
-    <div class="gridItem" id = "23" data-drop="true" data-drag = "false" data-jqyoui-options  jqyoui-droppable="{multiple:false}"></div>
-    <div class="gridItem" id = "24" data-drop="true" data-drag = "false" data-jqyoui-options  jqyoui-droppable="{multiple:false}"></div>
-    <div class="gridItem" id = "25" data-drop="true" data-drag = "false" data-jqyoui-options  jqyoui-droppable="{multiple:false}"></div>
-    <div class="gridItem" id = "26" data-drop="true" data-drag = "false" data-jqyoui-options  jqyoui-droppable="{multiple:false}"></div>
-    <div class="gridItem" id = "27" data-drop="true" data-drag = "false" data-jqyoui-options  jqyoui-droppable="{multiple:false}"></div>
-    <div class="gridItem" id = "28" data-drop="true" data-drag = "false" data-jqyoui-options  jqyoui-droppable="{multiple:false}"></div>
-    <div class="gridItem" id = "29" data-drop="true" data-drag = "false" data-jqyoui-options  jqyoui-droppable="{multiple:false}"></div>
-    <div class="gridItem" id = "30" data-drop="true" data-drag = "false" data-jqyoui-options  jqyoui-droppable="{multiple:false}"></div>
-    <div class="gridItem" id = "31" data-drop="true" data-drag = "false" data-jqyoui-options  jqyoui-droppable="{multiple:false}"></div>
+    <div id="grid">
+  <div class="gridTitle" data-drop="false" data-drag="false" data-jqyoui-options jqyoui-droppable>Fall</div>
+  <div class="gridTitle" data-drop="false" data-drag="false" data-jqyoui-options jqyoui-droppable>Spring</div>
+  <div class="gridTitle" data-drop="false" data-drag="false" data-jqyoui-options jqyoui-droppable>Fall</div>
+  <div class="gridTitle" data-drop="false" data-drag="false" data-jqyoui-options jqyoui-droppable>Spring</div>
+  <div class="gridTitle" data-drop="false" data-drag="false" data-jqyoui-options jqyoui-droppable>Fall</div>
+  <div class="gridTitle" data-drop="false" data-drag="false" data-jqyoui-options jqyoui-droppable>Spring</div>
+  <div class="gridTitle" data-drop="false" data-drag="false" data-jqyoui-options jqyoui-droppable>Fall</div>
+  <div class="gridTitle" data-drop="false" data-drag="false" data-jqyoui-options jqyoui-droppable>Spring</div>
+  <div class="gridItem" id="0" data-drop="true" data-drag="false" data-jqyoui-options jqyoui-droppable></div>
+  <div class="gridItem" id="1" data-drop="true" data-drag="false" data-jqyoui-options jqyoui-droppable="{multiple:true}"></div>
+  <div class="gridItem" id="2" data-drop="true" data-drag="false" data-jqyoui-options jqyoui-droppable="{multiple:true}"></div>
+  <div class="gridItem" id="3" data-drop="true" data-drag="false" data-jqyoui-options jqyoui-droppable="{multiple:true}"></div>
+  <div class="gridItem" id="4" data-drop="true" data-drag="false" data-jqyoui-options jqyoui-droppable="{multiple:true}"></div>
+  <div class="gridItem" id="5" data-drop="true" data-drag="false" data-jqyoui-options jqyoui-droppable="{multiple:true}"></div>
+  <div class="gridItem" id="6" data-drop="true" data-drag="false" data-jqyoui-options jqyoui-droppable="{multiple:true}"></div>
+  <div class="gridItem" id="7" data-drop="true" data-drag="false" data-jqyoui-options jqyoui-droppable="{multiple:false}"></div>
+  <div class="gridItem" id="8" data-drop="true" data-drag="false" data-jqyoui-options jqyoui-droppable="{multiple:false}"></div>
+  <div class="gridItem" id="9" data-drop="true" data-drag="false" data-jqyoui-options jqyoui-droppable="{multiple:false}"></div>
+  <div class="gridItem" id="10" data-drop="true" data-drag="false" data-jqyoui-options jqyoui-droppable="{multiple:false}"></div>
+  <div class="gridItem" id="11" data-drop="true" data-drag="false" data-jqyoui-options jqyoui-droppable="{multiple:false}"></div>
+  <div class="gridItem" id="12" data-drop="true" data-drag="false" data-jqyoui-options jqyoui-droppable="{multiple:false}"></div>
+  <div class="gridItem" id="13" data-drop="true" data-drag="false" data-jqyoui-options jqyoui-droppable="{multiple:false}"></div>
+  <div class="gridItem" id="14" data-drop="true" data-drag="false" data-jqyoui-options jqyoui-droppable="{multiple:false}"></div>
+  <div class="gridItem" id="15" data-drop="true" data-drag="false" data-jqyoui-options jqyoui-droppable="{multiple:false}"></div>
+  <div class="gridItem" id="16" data-drop="true" data-drag="false" data-jqyoui-options jqyoui-droppable="{multiple:false}"></div>
+  <div class="gridItem" id="17" data-drop="true" data-drag="false" data-jqyoui-options jqyoui-droppable="{multiple:false}"></div>
+  <div class="gridItem" id="18" data-drop="true" data-drag="false" data-jqyoui-options jqyoui-droppable="{multiple:false}"></div>
+  <div class="gridItem" id="19" data-drop="true" data-drag="false" data-jqyoui-options jqyoui-droppable="{multiple:false}"></div>
+  <div class="gridItem" id="20" data-drop="true" data-drag="false" data-jqyoui-options jqyoui-droppable="{multiple:false}"></div>
+  <div class="gridItem" id="21" data-drop="true" data-drag="false" data-jqyoui-options jqyoui-droppable="{multiple:false}"></div>
+  <div class="gridItem" id="22" data-drop="true" data-drag="false" data-jqyoui-options jqyoui-droppable="{multiple:false}"></div>
+  <div class="gridItem" id="23" data-drop="true" data-drag="false" data-jqyoui-options jqyoui-droppable="{multiple:false}"></div>
+  <div class="gridItem" id="24" data-drop="true" data-drag="false" data-jqyoui-options jqyoui-droppable="{multiple:false}"></div>
+  <div class="gridItem" id="25" data-drop="true" data-drag="false" data-jqyoui-options jqyoui-droppable="{multiple:false}"></div>
+  <div class="gridItem" id="26" data-drop="true" data-drag="false" data-jqyoui-options jqyoui-droppable="{multiple:false}"></div>
+  <div class="gridItem" id="27" data-drop="true" data-drag="false" data-jqyoui-options jqyoui-droppable="{multiple:false}"></div>
+  <div class="gridItem" id="28" data-drop="true" data-drag="false" data-jqyoui-options jqyoui-droppable="{multiple:false}"></div>
+  <div class="gridItem" id="29" data-drop="true" data-drag="false" data-jqyoui-options jqyoui-droppable="{multiple:false}"></div>
+  <div class="gridItem" id="30" data-drop="true" data-drag="false" data-jqyoui-options jqyoui-droppable="{multiple:false}"></div>
+  <div class="gridItem" id="31" data-drop="true" data-drag="false" data-jqyoui-options jqyoui-droppable="{multiple:false}"></div>
   </div>
   <div id = 'form' ng-controller = "formController as formCtrl" >
-    {{message}}
+  </br>
+    <div id = "greeting">{{message}}</div>
     <br/>
     <br/>
+    <!-- user selects major -->
     <form ng-submit = 'addMajor()' ng-hide = "showForm">
-    <select name="majors" ng-model = 'major'>
+      <div class = "styled-select">
+    <select name="majors" ng-model = 'major' >
   <option value="Political Economy">Political Economy</option>
   <option value="Economics">Economics</option>
   <option value="Economics/Mathematics">Economics/Mathematics</option>
@@ -76,28 +80,46 @@
   <option value="International Relations">International Relations</option>
 
   </select>
-  <select name="GE" ng-model = 'genEd'>
+</div>
+</br>
+<!-- user selects general education track -->
+<div class = "styled-select">
+  <select name="GE" ng-model = 'genEd' style = "{text-overflow: ellipsis}">
 <option value="honors">Thematic Option Honors Program</option>
 <option value="regular">University General Education Program</option>
 </select>
-      <input type = 'submit' value = 'Fight On!'>
+</div>
+<br />
+<br />
+<br/>
+      <input type = 'submit' class = "styled-button" value = 'Fight On!'>
     </form>
     <form ng-submit = 'addReqs()' ng-hide = "showReqs">
-      <input type = 'submit' value = 'Continue'>
+      <input type = 'submit' class = "styled-button" value = 'Continue'>
     </form>
     <form ng-submit = 'addElecs()' ng-hide = "showElec">
-      <input type = 'text' ng-model= 'elec1' placeholder="CTCS 466...">
-      <input type = 'text' ng-model= 'elec2' placeholder="ITP 140...">
-      <input type = 'text' ng-model= 'elec3' placeholder="SLL 199...">
-      <input type = 'text' ng-model= 'elec4' placeholder="MPGU 120a...">
-      <input type = 'text' ng-model= 'elec5' placeholder="MKT 405...">
-      <input type = 'submit' value = 'Continue'>
+      <input type = 'text' ng-model= 'elec1' placeholder="CTCS 466..."> <br/>
+      <input type = 'text' ng-model= 'elec2' placeholder="ITP 140..."> <br/>
+      <input type = 'text' ng-model= 'elec3' placeholder="SLL 199..."> <br/>
+      <input type = 'text' ng-model= 'elec4' placeholder="MPGU 120a..."> <br/>
+      <input type = 'text' ng-model= 'elec5' placeholder="MKT 405..."> <br/>
+    </br>
+      <input type = 'submit' class = "styled-button" value = 'Add classes'>
     </form>
   </div>
   <div id = "dropzone" data-drop = "true" jqyoui-droppable> </div>
-  <div id = "trash"></div>
   <div id = "message">
     <p> Built with care by Anshu Siripurapu, Alven Wang, and Chris Wilson in Los Angeles, California. </p>
   </div>
+
+  <div id="github" class="github-bar">
+<a class="github-button" href="https://github.com/classMap/class-map" data-icon="octicon-star" data-style="mega" data-count-href="/classMap/class-map/stargazers" data-count-api="/repos/classMap/class-map#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star classMap/class-map on GitHub">Star</a>
+<a class="github-button" href="https://github.com/classMap/class-map/fork" data-icon="octicon-git-branch" data-style="mega" data-count-href="/classMap/class-map/network" data-count-api="/repos/classMap/class-map#forks_count" data-count-aria-label="# forks on GitHub" aria-label="Fork classMap/class-map on GitHub">Fork</a>
+<a class="github-button" href="https://github.com/classMap/class-map/issues" data-icon="octicon-issue-opened" data-style="mega" data-count-api="/repos/classMap/class-map#open_issues_count" data-count-aria-label="# issues on GitHub" aria-label="Issue classMap/class-map on GitHub">Issue</a>
+<a class="github-button" href="https://github.com/anshusiripurapu" data-style="mega" data-count-href="/anshusiripurapu/followers" data-count-api="/users/anshusiripurapu#followers" data-count-aria-label="# followers on GitHub" aria-label="Follow @anshusiripurapu on GitHub">Follow @anshusiripurapu</a>
+<a class="github-button" href="https://github.com/alvenw" data-style="mega" data-count-href="/alvenw/followers" data-count-api="/users/alvenw#followers" data-count-aria-label="# followers on GitHub" aria-label="Follow @alvenw on GitHub">Follow @alvenw</a>
+  </div>
+  <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
   </body>
+
 </html>
